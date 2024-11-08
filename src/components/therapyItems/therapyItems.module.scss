@@ -1,0 +1,194 @@
+.therapyItems {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 20px;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+  transition: all 500ms;
+  &:hover {
+    background-color: #8d6938;
+    div {
+      h4,
+      p {
+        color: #fff;
+      }
+    }
+    .therapyItems_right {
+      > :nth-child(1) {
+        border: 1px solid #fff;
+        a {
+          color: #fff;
+        }
+      }
+      > :nth-child(2) {
+        button {
+        //  border: 1px solid #FFF;
+          color:#fff;
+          background-color: #654922;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    margin-bottom: 30px;
+    height: 180px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    margin: 30px auto;
+    max-width: 358px;
+  }
+  .therapyItems_left {
+    width: 100%;
+    max-width: 310px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 768px) {
+      align-items: center;
+      text-align: center;
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: 300;
+      font-family: Noto serif;
+      @media (max-width: 1200px) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-family: Noto serif;
+      font-weight: 300;
+      color: #393939;
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .therapyItems_middle {
+    width: 100%;
+    max-width: 200px;
+    @media (max-width: 1200px) {
+      text-align: center;
+      max-width: 160px;
+    }
+    p {
+      font-size: 24px;
+      font-family: Noto serif;
+      font-weight: 300;
+      color: #393939;
+      @media (max-width: 1200px) {
+        font-size: 19px;
+      }
+    }
+  }
+  .therapyItems_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+    @media (max-width: 1200px) {
+      max-width: 300px;
+      flex-direction: column;
+    }
+    > :first-child {
+      text-align: center;
+      width: 100%;
+      max-width: 288px;
+      border-radius: 30px;
+      border: 1px solid #654922;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 300ms ease;
+      &:hover {
+        background-color: #FFF;
+        a {
+          color: #603d0d;
+          
+        }
+      }
+      @media (max-width: 1200px) {
+        max-width: 200px;
+      }
+      @media(max-width:768px) {
+        max-width: 288px;
+      }
+      a {
+        display: block;
+        color: #654922;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Inter;
+        width: 100%;
+        padding: 20px 40px;
+        transition: all 300ms ease;
+        @media (max-width: 1200px) {
+          font-size: 16px;
+          padding: 10px 20px;
+          max-width: 200px;
+        }
+        @media (max-width: 768px) {
+          max-width: 288px;
+          padding: 20px 40px;
+        }
+      }
+    }
+    > :nth-child(2) {
+      width: 100%;
+      // max-width: 288px;
+      // text-align: center;
+      // border-radius: 30px;
+      // background-color: #654922;
+      border-radius: 30px;
+      
+      
+      @media (max-width: 1200px) {
+        max-width: 200px;
+      }
+      @media (max-width: 768px) {
+        max-width: 288px;
+      }
+      button {
+        width: 100%;
+        max-width: 288px;
+        text-align: center;
+        border-radius: 30px;
+        background-color: #654922;
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Inter;
+        padding: 20px 40px;
+        width: 100%;
+        transition: 300ms ease;
+        &:hover {
+          background-color: #fff;
+          color: #654922;
+        }
+        @media (max-width: 1200px) {
+        padding: 10px 20px;
+          font-size: 16px;
+        }
+        @media (max-width: 768px) {
+          max-width: 288px;
+          padding: 20px 40px;
+        }
+      }
+    }
+  }
+}

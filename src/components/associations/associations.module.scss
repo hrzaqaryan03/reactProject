@@ -1,0 +1,120 @@
+.associations {
+  width: 100%;
+  .associations__container {
+    width: 100%;
+    max-width: 1416px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    @media(max-width:768px) {
+      margin-bottom: 0;
+    }
+    .associations__title {
+        margin-bottom: 40px;
+       
+      h2 {
+        font-size: 48px;
+        font-family: Noto serif;
+        font-weight: 300;
+        color: #654922;
+        @media(max-width:1200px) {
+            font-size: 40px;
+
+        }
+        @media(max-width:768px) {
+            font-size: 30px;
+            text-align: center;
+        }
+      }
+    }
+
+    .associations__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 30px;
+      @media(max-width:1200px) {
+        gap: 18px;
+      }
+      @media(max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .text {
+        width: 100%;
+        max-width: 500px;
+        @media(max-width:768px) {
+            max-width: none;
+        }
+        p {
+          font-size: 24px;
+          font-family: Noto serif;
+          font-weight: 300;
+          @media(max-width:1200px) {
+            font-size: 20px;
+        }
+        @media(max-width:768px) {
+            font-size: 16px;
+        }
+        }
+      }
+
+      .image {
+        padding-right: 40px;
+        @media(max-width:768px) {
+            order: -1;
+            padding: 0;
+        }
+        .imageBox {
+          position: relative;
+          &:hover {
+            .lines {
+                right: -20px;
+                bottom: -20px;
+            }
+        }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media(max-width:768px) {
+                max-width: 400px;
+            }
+            
+          }
+          .lines {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            transition: all 400ms;
+            @media(max-width:768px) {
+                display: none;
+            }
+            & span:nth-child(1) {
+              display: block;
+              width: 28vw;
+              height: 1px;
+              min-width: 140px;
+              border-top: 1px solid #654922;
+              position: absolute;
+              right: -40px;
+              bottom: -18px;
+            }
+            & span:nth-child(2) {
+              display: block;
+              height: 26vw;
+              min-height: 200px;
+              width: 1px;
+              border-right: 1px solid #654922;
+              position: absolute;
+              right: -20px;
+              bottom: -40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

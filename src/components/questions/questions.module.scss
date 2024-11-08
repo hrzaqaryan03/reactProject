@@ -1,0 +1,121 @@
+.question {
+  width: 100%;
+  .question__container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 20px;
+    .title {
+      margin-bottom: 100px;
+      @media(max-width:768px) {
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 48px;
+        font-family: Noto serif;
+        font-weight: 300;
+        color: #654922;
+        @media(max-width:1200px) {
+          font-size: 40px;
+        }
+        @media(max-width:768px) {
+          font-size: 32px;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 10px;
+     
+      .questions {
+        width: 100%;
+        max-width: 700px;
+
+        .item {
+          width: 100%;
+          border: 1px solid #c8c5c5;
+          padding: 22px;
+          margin-bottom: 19px;
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          flex-direction: column;
+          @media(max-width:768px) {
+            padding: 10px;
+            height: auto;
+          }
+          gap: 30px;  
+          .question {
+            font-size: 18px;
+            font-family: Noto serif;
+            font-weight: 300;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media(max-width:768px) {
+              font-size: 16px;
+            }
+          }
+          .answer_hidden {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.4s ease;
+            p {
+              font-size: 16px;
+              font-weight: 300;
+              font-family: Noto serif;
+            }
+          }
+        }
+      }
+      .right {
+        padding: 0 40px 0 0;
+        @media(max-width:768px) {
+          display: none;
+        }
+        .imageBox {
+          position: relative;
+
+          img {
+            max-width: 100%;
+          }
+          &:hover {
+            .lines {
+              right: -20px;
+              top: -20px;
+            }
+          }
+          .lines {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            transition: all 400ms;
+            & span:nth-child(1) {
+              display: block;
+              width: 20vw;
+              height: 1px;
+              border-top: 1px solid #654922;
+              position: absolute;
+              top: -18px;
+              right: -36px;
+            }
+            & span:nth-child(2) {
+              display: block;
+              height: 28vw;
+              width: 1px;
+              border-right: 1px solid #654922;
+              position: absolute;
+              top: -36px;
+              right: -18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

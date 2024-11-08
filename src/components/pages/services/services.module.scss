@@ -1,0 +1,50 @@
+.services {
+  width: 100%;
+  .services__container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .services__title {
+      margin: 100px auto;
+      width: 100%;
+      max-width: 1170px;
+      text-align: center;
+      @media (max-width: 1200px) {
+        margin: 50px auto;
+      }
+      h2 {
+        font-size: 48px;
+        font-weight: 300;
+        font-family: Noto serif;
+        color: #654922;
+        margin-bottom: 40px;
+        @media (max-width: 1200px) {
+          font-size: 40px;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: Noto serif;
+        @media (max-width: 1200px) {
+          font-size: 18px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .hidden_title {
+        display: none;
+        font-weight: 300;
+        font-family: Noto serif;
+        font-size: 18px;
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+  }
+}

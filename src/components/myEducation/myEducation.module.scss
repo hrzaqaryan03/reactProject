@@ -1,0 +1,137 @@
+.myEducation {
+  width: 100%;
+
+  .myEducation__container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 20px;
+    @media(max-width:768px) {
+       h2 {
+        text-align: center;
+       }
+    }
+    .title {
+      h2 {
+        font-size: 48px;
+        font-family: Noto serif;
+        font-weight: 300;
+        color: #654922;
+        margin-bottom: 60px;
+        @media(max-width:1200px) {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+        @media(max-width:768px) {
+            font-size: 30px;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 20px;
+      @media(max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .text {
+        width: 50%;
+        @media(max-width:768px)  {
+            width: 100%;
+        }
+        p {
+          font-size: 24px;
+          font-family: Noto serif;
+          font-weight: 300;
+          margin-bottom: 40px;
+          @media(max-width:1200px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        @media(max-width:768px) {
+            font-size: 16px;
+        }
+        }
+        .text2 {
+          h2 {
+            font-size: 48px;
+            font-family: Noto serif;
+            font-weight: 300;
+            color: #654922;
+            margin-bottom: 60px;
+            @media(max-width:1200px) {
+                font-size: 38px;
+                margin-bottom: 30px;
+            }
+            @media(max-width:768px) {
+                font-size: 30px;
+            }
+          }
+        }
+      }
+      .image {
+        width: 50%;
+        @media(max-width:768px)  {
+            order: -1;
+            width: 100%;
+        }
+        .imageBox {
+          padding-right: 40px;
+          position: relative;
+          @media(max-width:768px) {
+            padding: 0;
+          }
+          &:hover {
+            .lines {
+                right: 20px;
+                bottom: -12px;
+            }
+          }
+          img {
+            max-width: 100%;
+            @media(max-width:768px) {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 400px;
+            }
+          }
+          .lines {
+            @media(max-width:768px) {
+                display: none;
+            }
+            position: absolute;
+            right: 45px;
+            bottom: 6px;
+            width: 50px;
+            height: 50px;
+            rotate: 90deg;
+            transition: all 400ms;
+            & span:nth-child(1) {
+              display: block;
+              width: 22vw;
+              height: 1px;
+              min-width: 140px;
+              border-top: 1px solid #654922;
+              position: absolute;
+              top: -18px;
+              right: -36px;
+            }
+            & span:nth-child(2) {
+              display: block;
+              height: 26vw;
+              min-height: 200px;
+              width: 1px;
+              border-right: 1px solid #654922;
+              position: absolute;
+              top: -36px;
+              right: -18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

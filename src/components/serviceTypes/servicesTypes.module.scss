@@ -1,0 +1,71 @@
+.serviceTypes {
+  text-align: center;
+  &__container {
+    max-width: 1416px;
+    margin: 0 auto;
+    padding:  20px;
+    margin-bottom: 40px;
+    @media(max-width:1024px) {
+      max-width: 630px;
+    }
+    @media(max-width:768px) {
+      margin-bottom: 0;
+    }
+    .serviceTypes__title {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 40px;
+      @media(max-width:768px) {
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 48px;
+        font-family: Noto serif;
+        font-weight: 300;
+        color: #654922;
+        margin-bottom: 40px;
+        @media(max-width:1200px) {
+          font-size: 40px;
+        }
+        @media(max-width:768px) {
+          font-size: 32px;
+          margin: 0 auto;
+          
+        }
+
+      }
+    }
+    .swiper_container {
+      width: 100%;
+      
+      div {
+        margin: 0 auto;
+      }
+      .custom-pagination {
+        position: absolute;
+        bottom: -20px; // Adjust this value to move bullets further down
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center; // Center-align the pagination bullets
+      }
+    }
+   
+    .service_list {
+      display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          // flex-wrap: wrap;
+     
+    }
+    
+    
+
+  }
+  
+
+}

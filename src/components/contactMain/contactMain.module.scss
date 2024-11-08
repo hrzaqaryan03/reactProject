@@ -1,0 +1,43 @@
+@keyframes stlideToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.contactMain {
+  width: 100%;
+  margin-bottom: 150px;
+  @media(max-width:1200px) {
+    margin-bottom: 80px;
+  }
+  @media(max-width:768px) {
+    margin-bottom: 40px;
+  }
+  .container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+    height: 40vw;
+    background-image: url("../../assets/img/Rectangle 1211.png");
+    background-size: cover;
+    .title {
+        
+        h1 {
+            font-size: 120px;
+            color: #fff;
+            font-family: Noto serif;
+            font-weight: 300;
+            animation: stlideToRight 600ms ease-in-out forwards;
+            @media(max-width:1200px) {
+              font-size: 100px;
+            }
+            @media(max-width:768px) {
+              font-size: 60px;
+            }
+        }
+    }
+  }
+}

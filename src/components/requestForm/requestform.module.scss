@@ -1,0 +1,162 @@
+form {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-width: 1200px) {
+    padding: 18px;
+  }
+
+  h5 {
+    font-size: 28px;
+    font-family: Noto serif;
+    font-weight: 300;
+    color: #654922;
+    margin-bottom: 26px;
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    label {
+      font-size: 18px;
+      font-weight: 300;
+      font-family: Noto serif;
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
+    }
+    input {
+      width: 100%;
+      background-color: #efeeee;
+      height: 66px;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: Noto serif;
+      @media (max-width: 1200px) {
+        padding: 10px;
+        font-size: 15px;
+      }
+      @media (max-width: 768px) {
+        height: 44px;
+      }
+      &:focus {
+        border: none;
+      }
+      &::placeholder {
+        font-size: 16px;
+        font-family: Noto serif;
+        color: #787878;
+      }
+    }
+    textarea {
+      height: 140px;
+      width: 100%;
+      background-color: #efeeee;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: Noto serif;
+      resize: none;
+      @media (max-width: 1200px) {
+        font-size: 15px;
+      }
+      &::placeholder {
+        font-size: 16px;
+        font-family: Noto serif;
+        color: #787878;
+        @media (max-width: 1200px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .error_mesage {
+    p {
+      font-size: 18px;
+      font-family: Noto serif;
+      font-weight: 300;
+      color: #b10606;
+    }
+  }
+  button {
+    width: 100%;
+    background-color: #654922;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Noto serif;
+    height: 66px;
+    border-radius: 16px;
+    text-align: center;
+    @media (max-width: 768px) {
+      height: 44px;
+    }
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    .customCheckbox {
+      display: flex;
+      align-items: center;
+      position: relative;
+      input[type="checkbox"] {
+        position: absolute;
+        left: -9999px; 
+      }
+      span {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #654922;
+        border-radius: 2px;
+        background-color: transparent;
+        transition: background-color 300ms, border-color 300ms;
+        position: relative;
+      }
+      input[type="checkbox"]:checked + span {
+        border-color: #654922; 
+      }
+      input[type="checkbox"]:checked + span::after {
+        content: "✔";
+        color: #654922;
+        position: absolute;
+        top: -2px;
+        left: 3px;
+        font-size: 14px; 
+        transition: opacity 300ms; 
+      }
+     
+    }
+    span {
+      a {
+        color: #654922;
+      }
+    }
+  }
+  
+}
+input , textarea {
+  outline: none;
+}
+input:focus  , textarea:focus {
+  outline: 1px solid #654922 ;
+}

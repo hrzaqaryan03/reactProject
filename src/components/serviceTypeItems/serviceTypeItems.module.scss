@@ -1,0 +1,115 @@
+.item {
+  width: 100%;
+  max-width: 316px;
+  height: 427px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid #000;
+  padding: 40px 10px 10px;
+  transition: background-color 300ms ease;
+  @media (max-width: 1024px) {
+    margin: 0 auto 40px;
+    padding:  20px 10px;
+    gap: 30px;
+    height: 329px;
+    max-width: 280px;
+  }
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.099);
+    border: 1px solid #5656566b;
+  }
+  .item__title {
+    h4 {
+      font-size: 24px;
+      font-family: Noto serif;
+      font-weight: 300;
+      text-align: center;
+      height: 62px;
+      @media(max-width:1024px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .item__info {
+    p {
+      font-size: 18px;
+      font-family: Noto serif;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: #393939;
+      @media(max-width:1024px) {
+        font-size: 16px;
+      }
+    }
+    span {
+      font-size: 24px;
+      font-family: Noto serif;
+      font-weight: 300;
+      @media(max-width:1024px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .item__links {
+    button {
+      width: 288px;
+      background-color: #654922;
+      border-radius: 72px;
+      height: 60px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 18px;
+      font-family: Inter;
+      font-weight: 300;
+      transition: background-color 400ms ease;
+      &:hover {
+        background-color: #A16613;
+      }
+      @media(max-width:1024px) {
+        max-width: 180px;
+        height: 40px;
+        font-size: 16px;
+      }
+      
+    }
+    span {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      gap: 4px;
+      transition: all 300ms ease;
+      &:hover {
+        span {
+          background-color: #c17b19;
+        }
+        a {
+
+          color: #c17b19;
+        }
+      }
+      a {
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Inter;
+        color: #654922;
+        transition: all 300ms ease;
+      }
+      span {
+        display: block;
+        width: 132px;
+        height: 1px;
+        background-color: #654922;
+      }
+    }
+  }
+}
+
+
+
+
+

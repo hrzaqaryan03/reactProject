@@ -1,0 +1,94 @@
+.leaveRequest {
+  width: 100%;
+
+  .leaveRequest__container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 20px;
+    .leaveRequest__box {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f6f6f6;
+      gap: 20px;
+      @media(max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+      .leaveRequest__left {
+
+        .left_title {
+          margin-bottom: 24px;
+          h4 {
+            font-size: 38px;
+            font-weight: 300;
+            font-family: Noto serif;
+            color: #654922;
+            @media(max-width:1200px) {
+                font-size: 28px;
+
+            }
+          }
+        }
+        .left_info {
+          margin-bottom: 20px;
+          p {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 300;
+            font-family: Noto serif;
+            @media(max-width:1200px) {
+                font-size: 18px;
+                
+            }
+          }
+          ul {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            li {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              @media(max-width:1200px) {
+                align-items: start;
+            }
+
+              &::before {
+                content: url("../../../assets/icons/Arrow6.svg");
+              }
+              span {
+                font-size: 16px;
+                font-family: Noto serif;
+                font-weight: 300;
+                @media(max-width:1200px) {
+                    font-size: 14px;
+    
+                }
+              }
+            }
+          }
+        }
+        .left_imageBox {
+          img {
+            max-width: 600px;
+            height: 313px;
+            @media(max-width:1200px) {
+                max-width: 100%;
+                height: auto;
+            }
+          }
+        }
+      }
+      .leaveRequest__right {
+      }
+    }
+  }
+}
